@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", sans-serif;
+}
+header {
+  background: #222c3f;
+  color: antiquewhite;
+  height: 2.5rem;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 0 100px;
+  list-style: none;
+  font-size: medium;
+  padding: 5px;
+  font-family: "Google Sans", sans-serif;
+}
+.f-li {
+  margin-right: 40%;
+}
+.f-lii {
+  margin-right: 20%;
+}
+nav img {
+  width: 150px;
+  height: 60px;
+  display: block;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.right ul {
+  gap: 50px;
+}
+nav ul :first-child:hover {
+  color: rgba(130, 90, 29, 1);
+}
+nav ul :nth-child(2):hover {
+  color: rgba(130, 90, 29, 1);
+}
+nav ul :nth-child(3):hover {
+  color: rgba(130, 90, 29, 1);
+}
+nav ul :nth-child(4):hover {
+  color: rgba(130, 90, 29, 1);
+}
+nav ul :nth-child(5):hover {
+  color: rgba(130, 90, 29, 1);
+}
+nav ul :nth-child(6):hover {
+  color: rgba(130, 90, 29, 1);
+}
+nav ul :nth-child(7):hover {
+  color: rgba(130, 90, 29, 1);
+}
+nav ul :nth-child(8):hover {
+  color: rgba(130, 90, 29, 1);
+}
+.first-p {
+  position: absolute;
+  bottom: 5px;
+  left: 80px;
+  color: white;
+  width: 50%;
+  height: 55%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  padding: 30px;
+  animation: slideLeft 1s ease;
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.first-p button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.first-p h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.first-p p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+.first-p button:hover {
+  box-shadow: 0 0 10px 10px #5b95e5;
+  transform: translateY(-3px);
+}
+.gvc {
+  display: flex;
+  padding: 8%;
+}
+.gvc img {
+  display: block;
+  width: 250px;
+  /* height: 350px; */
+}
+.left-gvc p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5b6472;
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+.left-gvc h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.left-gvc {
+  width: 50%;
+}
+.right-gvc {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.right-gvc-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 50px;
+}
+.right-gvc-fd {
+  text-align: center;
+}
+.right-gvc-fd h2 {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #1b3556;
+  font-weight: bold;
+}
+.right-gvc-fd p {
+  color: #6d7583;
+  font-size: 15px;
+  margin: 0;
+}
+.left-gvc button {
+  padding: 9px;
+  width: 160px;
+  border: none;
+  border-radius: 3px;
+  background: rgba(17, 24, 39, 1);
+  color: white;
+  font-size: 15px;
+  margin-left: 10rem;
+}
+.left-general-map img {
+  display: block;
+  width: 500px;
+}
+.general-map {
+  display: flex;
+}
+.right-general-map {
+  width: 50%;
+  padding: 0 5rem;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.right-general-map h3 {
+  width: 250px;
+  font-size: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.right-general-map i {
+  font-size: 58px;
+  padding: 1.5rem;
+}
+.right-general-map h2 {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0.5rem;
+}
+.right-general-map p {
+  width: 300px;
+  margin: 0 auto;
+  color: #6d7583;
+}
+.left-general-map {
+  width: 50%;
+}
+.left-general-map h1 {
+  width: 500px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(223, 145, 29);
+}
+.left-general-map p {
+  width: 500px;
+  color: #6d7583;
+}
+.the-main h1 {
+  margin-top: 1rem;
+  text-align: center;
+  align-items: center;
+}
+.the-main {
+  margin-top: 15rem;
+}
+.the-main p {
+  color: #6d7583;
+  text-align: center;
+  align-items: center;
+}
+.faculties {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.faculty-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.arrow {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: #8b6b5a;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.faculty-container {
+  display: flex;
+  overflow-x: auto; /*this makes it overflow on x-axis allowing user to scroll */
+  scroll-behavior: smooth;
+  flex: 1;
+  border-top: 2px solid #bbb;
+  scrollbar-width: none; /*after addind the overflow-x, there was scrollbar under that moves every time a user scrolls, this function was used to remove it */
+}
+.faculty-container::-webkit-scrollbar{
+display: none; /*this is used with the scrollbar width,it hides the scrollbar across all major browsers while keeping the scrolling functionality  */
+}
+.faculty{
+ flex: 0 0 180px; /*this adds left and right space between the faculties  */
+ padding: 20px;
+border-right: 1px solid #bbb;  /* this adds the lines between every faculty */
+cursor: pointer;
+transition: 3s; /* this adds a transition function to the faculties,t makes them appear and display within 3s  */
+} 
+.faculty i{
+display: block; /* this basically allows the icons to stay at the top of the page faculty name */
+font-size: 22px;
+margin-bottom: 10px;
+}
+.faculty:hover,
+.faculty.active{
+color: #0056d2;
+}
+.faculty-card{
+    width: 280px;
+    background: rgb(131, 117, 117);
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    color: #4d545f;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    opacity: 0;
+    transition: opacity .3s ease; /* this basically allows the card to display in 3s */
+    display: none;
+}
+.faculty-card button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #0056d2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.faculty:last-child{
+    border-right: none;
+}
