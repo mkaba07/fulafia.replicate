@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px;
+    gap: 1rem;
+
+}
+        .box{
+            padding:.5rem;
+            color: rgb(226, 203, 203);
+        }
+        .box:nth-child(1){
+            background: red;
+            grid-column: span  2;
+        }
+        .box:nth-child(2){
+            background: green;
+            
+    
+        }
+        .box:nth-child(3){
+            background: crimson;
+            grid-row: span 2;
+        }
+        .box:nth-child(4){
+            background: purple;
+            grid-column: span 3;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam?</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatem.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, mollitia?</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nihil.</div>
+    </div>
+    
+</body>
+</html>
